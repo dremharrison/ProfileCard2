@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProfileCard</string>
+    <string name="profile">Profile</string>
+    <string name="profile_info">please fill out information below</string>
+    <string name="full_name">full name</string>
+    <string name="last_name">last name</string>
+    <string name="user_name">username</string>
+    <string name="bday">birthdate</string>
+    <string name="street_addy">street</string>
+    <string name="city">city</string>
+    <string name="state">state</string>
+
+</resources>
