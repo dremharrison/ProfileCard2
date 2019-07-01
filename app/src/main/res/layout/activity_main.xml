@@ -23,15 +23,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:padding="5dp"
-        android:text="@string/profile_info"
+        android:text="@string/profileinfo"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@id/fullNameInput"
+        app:layout_constraintBottom_toTopOf="@id/firstNameInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profileTextView" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fullNameInput"
+        android:id="@+id/firstNameInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -39,71 +39,48 @@
         app:layout_constraintTop_toBottomOf="@id/profileInfoTextView">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstNameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/full_name" />
+            android:hint="@string/first_name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/birthdayInput"
+        android:id="@+id/lastNameInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fullNameInput">
+        app:layout_constraintTop_toBottomOf="@id/firstNameInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastNameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/bday" />
+            android:hint="@string/last_name" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/streetAddyInput"
+        android:id="@+id/usernameInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/birthdayInput">
+        app:layout_constraintTop_toBottomOf="@id/lastNameInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/street_addy" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/cityAddyInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/streetAddyInput">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/city" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/stateAddyInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cityAddyInput">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/state" />
+            android:hint="@string/user_name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/enterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/stateAddyInput"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInputLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
-        android:text="Enter"/>
+        android:text="Info >"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

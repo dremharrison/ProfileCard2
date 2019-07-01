@@ -1,13 +1,20 @@
 <resources>
     <string name="app_name">ProfileCard</string>
     <string name="profile">Profile</string>
-    <string name="profile_info">please fill out information below</string>
-    <string name="full_name">full name</string>
+    <string name="info">More Info</string>
+    <string name="social">Social Media</string>
+    <string name="profileinfo">please fill out your info below</string>
+    <string name="socialinfo">please fill out your social media handles below</string>
+    <string name="first_name">first name</string>
     <string name="last_name">last name</string>
     <string name="user_name">username</string>
-    <string name="bday">birthdate</string>
-    <string name="street_addy">street</string>
+    <string name="email">email</string>
+    <string name="phone">phone number (e.g. 555666777)</string>
     <string name="city">city</string>
-    <string name="state">state</string>
+    <string name="state">state (e.g. NY)</string>
+    <string name="facebook">facebook username</string>
+    <string name="twitter">twitter handle</string>
+    <string name="instagram">instagram username</string>
+    <string name="github">github username</string>
 
 </resources>
